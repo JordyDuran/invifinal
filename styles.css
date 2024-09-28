@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #E2D8D0;
+}
+
+.intro {
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Tangerine', cursive; /* Aplicar la fuente */
+    font-size: 55px; /* Ajustar el tamaño de la fuente */
+    transform: scale(2.2); /* Escalar la fuente al tamaño deseado */
+    letter-spacing: .7px;
+    font-weight: 700; /* Aplicar negritas */
+}
+
+
+.word {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.fondo-img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    margin-top: 20px; /* Espacio entre la frase y la imagen */
+}
