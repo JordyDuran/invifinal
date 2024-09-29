@@ -179,7 +179,7 @@ p {
 @media (max-width: 600px) {
     .ubicacion {
         font-size: 18px; /* Ajusta el tamaño de la fuente en móviles */
-        top: 64%; /* Ajusta la posición para móviles si es necesario */
+        top: 69%; /* Ajusta la posición para móviles si es necesario */
         width: 90%; /* Asegura que el texto ocupe más espacio horizontal en móviles */
     }
 }
