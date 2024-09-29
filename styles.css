@@ -86,6 +86,12 @@ p {
     
 }
 
+@media (max-width: 500px) {
+    .padres {
+        font-size: 14px; /* Reducir el tamaño de la fuente para móviles */
+    }
+}
+
 .padres-color{
     color: #558159; 
     font-weight: 800;
