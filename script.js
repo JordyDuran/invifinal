@@ -43,5 +43,8 @@ palabras.forEach((palabra, index) => {
     }
 });
 
-
+document.getElementById("musica-fondo").volume = 0.2; // Ajusta el volumen a 20%
+audio.addEventListener('canplaythrough', function() {
+    audio.currentTime = 1; // Comienza desde el segundo 30
+});
 
