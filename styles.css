@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 body {
     max-width: 500px;
     margin: 0 auto;
@@ -47,6 +53,7 @@ body {
 .contenido {
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 h2 {
@@ -61,4 +68,64 @@ p {
 .fondo-img {
     width: 100%; /* Ajustar al ancho del contenedor */
     margin-top: 20px; /* Espacio entre la frase y la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.padres {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 38%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black; 
+    font-size: 22px;
+    padding: 10px;
+    
+}
+
+.padres-color{
+    color: #558159; 
+    font-weight: 800;
+}
+
+.fecha {
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    top: 53%; /* Ajusta la posición del bloque de fecha según lo necesites */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.calendar{
+    padding: 10px;
+    width: 30%;
+}
+
+
+/* Estilo inicial con opacidad 0 para que el elemento esté invisible */
+.fade-in {
+    opacity: 0;
+    transform: translate(-50%, 50px); /* Comienza centrado horizontalmente, pero 50px abajo */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Clase que se activará cuando el elemento sea visible */
+.fade-in.visible {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Se mueve a su posición original */
+}
+
+.fecha-color{
+        color: #558159;     
+}
+
+.fecha-texto{
+    font-weight: 300;
 }
