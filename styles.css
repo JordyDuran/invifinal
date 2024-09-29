@@ -76,7 +76,7 @@ p {
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 40%; 
+    top: 32%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -88,7 +88,7 @@ p {
 
 @media (max-width: 500px) {
     .padres {
-        font-size: 14px; /* Reducir el tamaño de la fuente para móviles */
+        font-size: 18px; /* Reducir el tamaño de la fuente para móviles */
     }
 }
 
@@ -100,7 +100,7 @@ p {
 .fecha {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 53%; /* Ajusta la posición del bloque de fecha según lo necesites */
+    top: 43%; /* Ajusta la posición del bloque de fecha según lo necesites */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -134,4 +134,47 @@ p {
 
 .fecha-texto{
     font-weight: 300;
+}
+
+
+.ubicacion {
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    top: 64%; /* Ajusta según la disposición en tu diseño */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    padding: 10px;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 600px) {
+    .ubicacion {
+        font-size: 18px; /* Ajusta el tamaño de la fuente en móviles */
+        top: 80%; /* Ajusta la posición para móviles si es necesario */
+        width: 90%; /* Asegura que el texto ocupe más espacio horizontal en móviles */
+    }
+}
+
+.ubicacion-color{
+    color: #558159;  
+    font-weight: 700;
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para que el contenido del iframe respete las esquinas redondeadas */
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.mapa iframe {
+    
+    height: 300px;
+    border: 0;
+    border-radius: 20px; /* Aplicar esquinas redondeadas al iframe */
 }
