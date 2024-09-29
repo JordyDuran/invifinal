@@ -44,7 +44,21 @@ palabras.forEach((palabra, index) => {
 });
 
 document.getElementById("musica-fondo").volume = 0.2; // Ajusta el volumen a 20%
-audio.addEventListener('canplaythrough', function() {
-    audio.currentTime = 1; // Comienza desde el segundo 30
+
+
+// Selecciona el botón y el audio
+const playButton = document.getElementById("playMusicBtn");
+const audio = document.getElementById("musica-fondo");
+
+// Evento para reproducir o pausar la música cuando se hace clic en el botón
+playButton.addEventListener("click", function() {
+    if (audio.paused) {
+        audio.play();  // Reproducir música
+        playButton.textContent = "⏸️";  // Cambia el icono a pausa
+    } else {
+        audio.pause();  // Pausar música
+        playButton.textContent = " ⏯";  // Cambia el icono a reproducir
+    }
 });
+
 

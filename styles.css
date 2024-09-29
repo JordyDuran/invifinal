@@ -14,6 +14,28 @@ audio{
     display:none;
 }
 
+.btn-flotante {
+    position: fixed;
+    bottom: 20px; /* A 20px del borde inferior */
+    right: 20px;  /* A 20px del borde derecho */
+    background-color: #a7698a; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px; /* Espacio interior */
+    border-radius: 50%; /* Hacer el botón redondo */
+    font-size: 20px; /* Tamaño del texto */
+    cursor: pointer; /* Cambiar cursor a mano al pasar sobre el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra leve */
+    z-index: 1000; /* Asegurar que el botón esté siempre visible */
+    transition: background-color 0.3s ease; /* Animación suave en hover */
+}
+
+/* Cambiar el color de fondo al hacer hover */
+.btn-flotante:hover {
+    background-color: #45a049; /* Cambiar a un tono más oscuro de verde */
+}
+
+
 body {
     max-width: 500px;
     margin: 0 auto;
@@ -171,7 +193,7 @@ p {
 
 
 
-button{
+.btn-ubicacion{
     font-family: "Cormorant Garamond", serif;
     background:#4f8453a3;
     color:#e0e0e0;
@@ -185,11 +207,11 @@ button{
     outline:none;
     border-radius: 5px;
   }
-  button:hover{
+  .btn-ubicacion:hover{
     background:#5c8065;
     color:#ffffffa3;
   }
-  button:before,button:after{
+  .btn-ubicacion:before,.btn-ubicacion:after{
     content:'';
     position:absolute;
     top:0;
@@ -199,13 +221,13 @@ button{
     background: #134819;
     transition:400ms ease all;
   }
-  button:after{
+  .btn-ubicacion:after{
     right:inherit;
     top:inherit;
     left:0;
     bottom:0;
   }
-  button:hover:before,button:hover:after{
+  .btn-ubicacion:hover:before,.btn-ubicacion:hover:after{
     width:100%;
     transition:800ms ease all;
   }
