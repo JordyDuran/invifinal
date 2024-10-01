@@ -193,6 +193,52 @@ p {
 
 
 
+
+.bloque-dresscode {
+    font-family: "Cormorant Garamond", serif;
+    position: absolute; /* Permite que el bloque se posicione sobre otros elementos */
+    top: 85%; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el bloque en la mitad */
+    padding: 20px; /* Espacio alrededor del bloque */
+    background-color: transparent; /* Fondo transparente */
+    z-index: 1; /* Asegura que el bloque esté por encima de la imagen de fondo */
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center; /* Centra las imágenes en su contenedor */
+    gap: 20px; /* Espacio entre imágenes */
+    margin: 0 auto; /* Asegura que el contenedor de imágenes esté centrado */
+}
+
+.dress-img {
+    width: 90px;
+    max-width: 200px; /* Ancho máximo de imágenes */
+    margin: 10px; /* Espacio alrededor de las imágenes */
+}
+
+.texto-dresscode h2 {
+    color: #558159; 
+    font-size: 25px;
+    margin-top: 20px; /* Margen superior para separar del bloque de imágenes */
+}
+
+.texto-dresscode p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.texto-dresscode p strong {
+    font-size: 18px;
+    color: rgb(44, 80, 61); /* Color para el texto destacado */
+}
+
+
+
+
+
+
 .btn-ubicacion{
     font-family: "Cormorant Garamond", serif;
     background:#4f8453a3;

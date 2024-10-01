@@ -66,7 +66,7 @@ palabras.forEach((palabra, index) => {
     }
 });
 
-document.getElementById("musica-fondo").volume = 0.2; // Ajusta el volumen a 20%
+document.getElementById("musica-fondo").volume = 0.2; 
 
 
 // Selecciona el botón y el audio
@@ -77,10 +77,10 @@ const audio = document.getElementById("musica-fondo");
 playButton.addEventListener("click", function() {
     if (audio.paused) {
         audio.play();  // Reproducir música
-        playButton.textContent = "💌";  // Cambia el icono a pausa
+        playButton.textContent = "💌"; 
     } else {
         audio.pause();  // Pausar música
-        playButton.textContent = "💌";  // Cambia el icono a reproducir
+        playButton.textContent = "💌";  
     }
 });
 
