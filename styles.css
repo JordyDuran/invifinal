@@ -113,8 +113,8 @@ p {
 }
 
 @media (max-width: 500px) {
-    .padres .fecha .ubicacion .bloque-dresscode .texto-regalos .itinerario{
-        font-size: 18px; /* Reducir el tamaño de la fuente para móviles */
+    .padres{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
     }
 }
 
@@ -134,6 +134,12 @@ p {
     font-size: 24px;
     padding: 10px;
 }
+
+@media (max-width: 500px) {
+    .fecha{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        top: 21%;
+    }
 
 .calendar{
     padding: 10px;
@@ -176,11 +182,10 @@ p {
 }
 
 /* Ajustes específicos para móviles */
-@media (max-width: 600px) {
-    .ubicacion {
-        font-size: 18px; /* Ajusta el tamaño de la fuente en móviles */
-        top: 69%; /* Ajusta la posición para móviles si es necesario */
-        width: 90%; /* Asegura que el texto ocupe más espacio horizontal en móviles */
+@media (max-width: 500px) {
+    .ubicacion{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        top: 30%;
     }
 }
 
@@ -204,6 +209,13 @@ p {
     padding: 20px; /* Espacio alrededor del bloque */
     background-color: transparent;
     z-index: 1; /* Asegura que el bloque esté por encima de la imagen de fondo */
+}
+
+@media (max-width: 500px) {
+    .bloque-dresscode{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        top: 39.6%;
+    }
 }
 
 .imagenes {
@@ -295,6 +307,12 @@ p {
     background-color: transparent;
     z-index: 2; /* Por encima de la imagen */
 }
+@media (max-width: 500px) {
+    .bloque-regalos{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        top: 45.7%;
+    }
+}
 
 .texto-regalos h2 {
     color: #558159; 
@@ -363,6 +381,12 @@ p {
     flex-direction: column;
     align-items: center; /* Alinea todos los elementos al centro */
 }
+@media (max-width: 500px) {
+    .itinerario{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        top: 39.6%;
+    }
+}
 
 /* La línea del centro */
 .linea {
@@ -421,4 +445,5 @@ p {
 .itinerario {
     position: relative;
     z-index: 2;
+}
 }
