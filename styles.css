@@ -102,7 +102,7 @@ p {
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 32%; 
+    top: 15%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -126,7 +126,7 @@ p {
 .fecha {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 43%; /* Ajusta la posición del bloque de fecha según lo necesites */
+    top: 22%; /* Ajusta la posición del bloque de fecha según lo necesites */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -166,7 +166,7 @@ p {
 .ubicacion {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 69%; /* Ajusta según la disposición en tu diseño */
+    top: 31.5%; /* Ajusta según la disposición en tu diseño */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -187,6 +187,7 @@ p {
 .ubicacion-color{
     color: #558159;  
     font-weight: 700;
+    font-size: 27px;
 }
 
 
@@ -197,11 +198,11 @@ p {
 .bloque-dresscode {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Permite que el bloque se posicione sobre otros elementos */
-    top: 85%; /* Ajusta la posición vertical */
+    top: 40%; /* Ajusta la posición vertical */
     left: 50%; /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra el bloque en la mitad */
     padding: 20px; /* Espacio alrededor del bloque */
-    background-color: transparent; /* Fondo transparente */
+    background-color: transparent;
     z-index: 1; /* Asegura que el bloque esté por encima de la imagen de fondo */
 }
 
@@ -213,14 +214,14 @@ p {
 }
 
 .dress-img {
-    width: 90px;
+    width: 100px;
     max-width: 200px; /* Ancho máximo de imágenes */
-    margin: 10px; /* Espacio alrededor de las imágenes */
+    margin: 5px; /* Espacio alrededor de las imágenes */
 }
 
 .texto-dresscode h2 {
     color: #558159; 
-    font-size: 25px;
+    font-size: 27px;
     margin-top: 20px; /* Margen superior para separar del bloque de imágenes */
 }
 
@@ -230,9 +231,10 @@ p {
 }
 
 .texto-dresscode p strong {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(44, 80, 61); /* Color para el texto destacado */
 }
+
 
 
 
@@ -279,6 +281,144 @@ p {
   }
   
 
+  /* Asegura que la imagen de fondo esté bien configurada */
 
 
+/* Bloque de regalos centrado y encima de la imagen */
+.bloque-regalos {
+    font-family: "Cormorant Garamond", serif;
+    position: absolute; /* Se coloca de manera absoluta dentro de su contenedor */
+    top: 46.5%; /* Ajusta la distancia desde la parte superior de la página */
+    left: 50%;
+    transform: translate(-50%, 0); /* Mantiene el bloque centrado horizontalmente */
+    padding: 20px;
+    background-color: transparent;
+    z-index: 2; /* Por encima de la imagen */
+}
 
+.texto-regalos h2 {
+    color: #558159; 
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+.texto-regalos p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-mesaregalos {
+    font-family: "Cormorant Garamond", serif;
+    background: #4f8453a3;
+    color: #e0e0e0;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 20px;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn-mesaregalos:hover {
+    background: #5c8065;
+    color: #ffffffa3;
+}
+
+.btn-mesaregalos:before,
+.btn-mesaregalos:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #134819;
+    transition: 400ms ease all;
+}
+
+.btn-mesaregalos:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-mesaregalos:hover:before,
+.btn-mesaregalos:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+/* Contenedor del itinerario */
+.itinerario {
+    position: relative;
+    max-width: 400px; /* Controla el ancho del itinerario */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea todos los elementos al centro */
+}
+
+/* La línea del centro */
+.linea {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #134819; /* Cambia el color aquí si lo necesitas */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Los eventos del itinerario */
+.evento {
+    position: relative;
+    width: 45%; /* Cada evento ocupa el 45% del ancho para dejar espacio a la línea */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.evento img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.evento.izquierda {
+    align-self: flex-end; /* Alínea a la derecha */
+    text-align: right;
+    margin-top: 0;
+}
+
+.evento.derecha {
+    align-self: flex-start; /* Alínea a la izquierda */
+    text-align: left;
+    margin-top: 60px; /* Crea el zigzag */
+}
+
+.hora {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Asegurar que el itinerario esté sobre la imagen de fondo */
+.itinerario {
+    position: relative;
+    z-index: 2;
+}
