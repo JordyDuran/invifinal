@@ -113,7 +113,7 @@ p {
 }
 
 @media (max-width: 500px) {
-    .padres {
+    .padres .fecha .ubicacion .bloque-dresscode .texto-regalos .itinerario{
         font-size: 18px; /* Reducir el tamaño de la fuente para móviles */
     }
 }
