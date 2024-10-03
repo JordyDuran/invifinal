@@ -85,3 +85,22 @@ playButton.addEventListener("click", function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const image = document.querySelector(".fondo-img");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            image.classList.add("show"); // Añade la clase para el fade in
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Ajusta según cuánto quieres que se vea la imagen antes de empezar el fade in
+      }
+    );
+  
+    observer.observe(image); // Observa la imagen
+  });
+  

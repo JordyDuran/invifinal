@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.fondo-img {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 1.5s ease-in-out; /* Transición suave */
+  }
+  
+  .fondo-img.show {
+    opacity: 1; /* Se hace visible cuando se agrega la clase "show" */
+  }
+  
+
 .cormorant-garamond-regular {
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
@@ -88,7 +98,7 @@ h2 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .fondo-img {
@@ -140,6 +150,7 @@ p {
         font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
         top: 21%;
     }
+}
 
 .calendar{
     padding: 10px;
@@ -203,7 +214,7 @@ p {
 .bloque-dresscode {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Permite que el bloque se posicione sobre otros elementos */
-    top: 40%; /* Ajusta la posición vertical */
+    top: 42%; /* Ajusta la posición vertical */
     left: 50%; /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra el bloque en la mitad */
     padding: 20px; /* Espacio alrededor del bloque */
@@ -255,7 +266,7 @@ p {
 
 .btn-ubicacion{
     font-family: "Cormorant Garamond", serif;
-    background:#4f8453a3;
+    background:linear-gradient(45deg, #5e9a63a3,#205d25a3);
     color:#e0e0e0;
     border:none;
     position:relative;
@@ -266,6 +277,7 @@ p {
     transition:800ms ease all;
     outline:none;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
   }
   .btn-ubicacion:hover{
     background:#5c8065;
@@ -300,7 +312,7 @@ p {
 .bloque-regalos {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Se coloca de manera absoluta dentro de su contenedor */
-    top: 46.5%; /* Ajusta la distancia desde la parte superior de la página */
+    top: 49.5%; /* Ajusta la distancia desde la parte superior de la página */
     left: 50%;
     transform: translate(-50%, 0); /* Mantiene el bloque centrado horizontalmente */
     padding: 20px;
@@ -327,7 +339,7 @@ p {
 
 .btn-mesaregalos {
     font-family: "Cormorant Garamond", serif;
-    background: #4f8453a3;
+    background:linear-gradient(45deg, #5e9a63a3,#205d25a3);
     color: #e0e0e0;
     border: none;
     position: relative;
@@ -338,6 +350,7 @@ p {
     transition: 800ms ease all;
     outline: none;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
 }
 
 .btn-mesaregalos:hover {
@@ -371,79 +384,130 @@ p {
 }
 
 
-/* Contenedor del itinerario */
-.itinerario {
-    position: relative;
-    max-width: 400px; /* Controla el ancho del itinerario */
-    margin: 0 auto; /* Centra horizontalmente */
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Alinea todos los elementos al centro */
+
+.texto-solo-adultos {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px; /* Aumenta el ancho máximo */
+    padding: 20px 30px; /* Aumenta el padding lateral */
+    background-color: transparent; /* Sin color de fondo */
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    text-align: center;
+    color: #000; /* Color del texto */
+    border-radius: 8px;
+    z-index: 2;
 }
+
+.texto-solo-adultos strong {
+    font-size: 20px;
+    color: #447451; /* Color rojo para destacar la parte importante */
+}
+
+
+
+
+.imagen-itinerario {
+    position: absolute; /* Para colocarla sobre la imagen de fondo */
+    top: 73%; /* Ajusta esta posición según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+    z-index: 2; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.imagen-itinerario img {
+    width: 189px;
+    height: auto;
+    border-radius: 8px; /* Si deseas esquinas redondeadas */
+}
+
 @media (max-width: 500px) {
-    .itinerario{
+    .imagen-itinerario{
         font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 39.6%;
+        top: 75.5%;
     }
 }
 
-/* La línea del centro */
-.linea {
+
+.itinerario {
     position: absolute;
+    top: 78%;
     left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.itinerario::before {
+    content: '';
+    position: absolute;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background-color: #134819; /* Cambia el color aquí si lo necesitas */
+    left: 50%;
     transform: translateX(-50%);
+    width: 3px;
+    background-color: rgb(74, 128, 81); /* Línea negra en el centro */
     z-index: 1;
 }
 
-/* Los eventos del itinerario */
 .evento {
     position: relative;
-    width: 45%; /* Cada evento ocupa el 45% del ancho para dejar espacio a la línea */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    z-index: 2;
-}
-
-.evento img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Centra la imagen, hora y texto */
 }
 
 .evento.izquierda {
-    align-self: flex-end; /* Alínea a la derecha */
-    text-align: right;
-    margin-top: 0;
+    left: 0;
 }
 
 .evento.derecha {
-    align-self: flex-start; /* Alínea a la izquierda */
-    text-align: left;
-    margin-top: 60px; /* Crea el zigzag */
+    left: 50%;
 }
 
-.hora {
+.evento img {
+    width: 50px; /* Ajusta el tamaño de las imágenes */
+    height: 50px;
+}
+
+.evento .hora {
+    font-size: 18px;
+    color:#134819;
     font-weight: bold;
-    font-size: 16px;
+    margin-top: 10px;
 }
 
-p {
-    margin: 5px 0;
+.evento .descripcion {
+    font-size: 23px;
+    color: #000000;
+    margin-top: 5px;
+    font-family: "Cormorant Garamond", serif;
 }
 
-/* Asegurar que el itinerario esté sobre la imagen de fondo */
-.itinerario {
-    position: relative;
+.evento::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: rgb(42, 115, 60); /* Círculo negro */
+    border-radius: 50%;
     z-index: 2;
 }
+
+.evento.izquierda::before {
+    right: 12px;
+}
+
+.evento.derecha::before {
+    left: 12px;
 }
