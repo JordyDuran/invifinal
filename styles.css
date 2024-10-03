@@ -112,7 +112,7 @@ p {
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 15%; 
+    top: 16.5%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -124,7 +124,8 @@ p {
 
 @media (max-width: 500px) {
     .padres{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        font-size: 17px; /* Reducir el tamaño de la fuente para móviles **************************************************/
+        top: 17%;
     }
 }
 
@@ -136,7 +137,7 @@ p {
 .fecha {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 22%; /* Ajusta la posición del bloque de fecha según lo necesites */
+    top: 26%; /* Ajusta la posición del bloque de fecha según lo necesites */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -147,8 +148,8 @@ p {
 
 @media (max-width: 500px) {
     .fecha{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 21%;
+        font-size: 18px; /* Reducir el tamaño de la fuente para móviles *********************************************************/
+        top: 26%;
     }
 }
 
@@ -183,7 +184,7 @@ p {
 .ubicacion {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 31.5%; /* Ajusta según la disposición en tu diseño */
+    top: 38.5%; /* Ajusta según la disposición en tu diseño */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -195,8 +196,8 @@ p {
 /* Ajustes específicos para móviles */
 @media (max-width: 500px) {
     .ubicacion{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 30%;
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles *************************************************/
+        top: 39%;
     }
 }
 
@@ -214,7 +215,7 @@ p {
 .bloque-dresscode {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Permite que el bloque se posicione sobre otros elementos */
-    top: 42%; /* Ajusta la posición vertical */
+    top: 50.4%; /* Ajusta la posición vertical */
     left: 50%; /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra el bloque en la mitad */
     padding: 20px; /* Espacio alrededor del bloque */
@@ -224,8 +225,8 @@ p {
 
 @media (max-width: 500px) {
     .bloque-dresscode{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 39.6%;
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles *****************************************/
+        top: 50.5%;
     }
 }
 
@@ -312,7 +313,7 @@ p {
 .bloque-regalos {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Se coloca de manera absoluta dentro de su contenedor */
-    top: 49.5%; /* Ajusta la distancia desde la parte superior de la página */
+    top: 58%; /* Ajusta la distancia desde la parte superior de la página */
     left: 50%;
     transform: translate(-50%, 0); /* Mantiene el bloque centrado horizontalmente */
     padding: 20px;
@@ -321,19 +322,19 @@ p {
 }
 @media (max-width: 500px) {
     .bloque-regalos{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 45.7%;
+        font-size: 18px; /* Reducir el tamaño de la fuente para móviles *****************************************/
+        top: 57%;
     }
 }
 
 .texto-regalos h2 {
     color: #558159; 
-    font-size: 27px;
-    margin-top: 20px;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
 .texto-regalos p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -351,6 +352,12 @@ p {
     outline: none;
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 500px) {
+    .btn-mesaregalos{
+        height: 50px;
+    }
 }
 
 .btn-mesaregalos:hover {
@@ -387,7 +394,7 @@ p {
 
 .texto-solo-adultos {
     position: absolute;
-    top: 65%;
+    top: 70.5%;
     left: 50%;
     transform: translateX(-50%);
     max-width: 600px; /* Aumenta el ancho máximo */
@@ -401,6 +408,13 @@ p {
     z-index: 2;
 }
 
+@media (max-width: 500px) {
+    .texto-solo-adultos{
+        font-size: 18px; /* Reducir el tamaño de la fuente para móviles *****************************************/
+        top: 70%;
+    }
+}
+
 .texto-solo-adultos strong {
     font-size: 20px;
     color: #447451; /* Color rojo para destacar la parte importante */
@@ -411,7 +425,7 @@ p {
 
 .imagen-itinerario {
     position: absolute; /* Para colocarla sobre la imagen de fondo */
-    top: 73%; /* Ajusta esta posición según sea necesario */
+    top: 78.28%; /* Ajusta esta posición según sea necesario */
     left: 50%;
     transform: translateX(-50%);
     max-width: 80%; /* Ajusta el ancho máximo de la imagen */
@@ -426,15 +440,16 @@ p {
 
 @media (max-width: 500px) {
     .imagen-itinerario{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 75.5%;
+        
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles ********************************************/
+        top: 79%;
     }
 }
 
 
 .itinerario {
     position: absolute;
-    top: 78%;
+    top: 81%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -443,6 +458,13 @@ p {
     padding: 20px;
     box-sizing: border-box;
     z-index: 2;
+}
+
+@media (max-width: 500px) {
+    .itinerario{
+        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
+        top: 82.5%;
+    }
 }
 
 .itinerario::before {
@@ -474,12 +496,13 @@ p {
 }
 
 .evento img {
-    width: 50px; /* Ajusta el tamaño de las imágenes */
-    height: 50px;
+    width: 80px; /* Ajusta el tamaño de las imágenes */
+    padding: 8px;
+    height: 82px;
 }
 
 .evento .hora {
-    font-size: 18px;
+    font-size: 20px;
     color:#134819;
     font-weight: bold;
     margin-top: 10px;
