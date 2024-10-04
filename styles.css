@@ -46,6 +46,38 @@ audio{
 }
 
 
+/* Definir la animación */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Puedes ajustar este valor para que se desplace ligeramente al aparecer */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Inicialmente, los elementos están ocultos */
+  .ubicacion,
+  .bloque-dresscode,
+  .bloque-regalos,
+  .texto-solo-adutos,
+  .imagen-itinerario,
+  .confirmacion-asistencia,
+  .texto-solo-adultos,
+  .btn-confirm {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Suaviza la transición */
+  }
+  
+  /* Clase para mostrar el elemento con fade-in */
+  .show {
+    opacity: 1; /* Visible */
+    animation: fadeIn 0.5s forwards; /* Aplica la animación de fade-in */
+  }
+  
+
 body {
     max-width: 500px;
     margin: 0 auto;

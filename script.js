@@ -131,3 +131,33 @@ window.addEventListener('scroll', handleScroll);
 
 // Llamar a la función para la primera carga de la página
 handleScroll();
+
+
+// Función para verificar si un elemento está en la vista
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  // Función para agregar la clase 'show' a los elementos visibles
+  function handleScroll() {
+    const elements = document.querySelectorAll('.ubicacion, .bloque-dresscode, .texto-solo-adultos, .bloque-regalos, .regalos, .imagen-itinerario, .texto-solo-adutos, .confirmacion-asistencia, .btn-confirm');
+  
+    elements.forEach((element) => {
+      if (isElementInViewport(element)) {
+        element.classList.add('show'); // Agrega la clase 'show' para activar la animación
+      }
+    });
+  }
+  
+  // Escucha el evento de scroll
+  window.addEventListener('scroll', handleScroll);
+  
+  // Llama a la función al cargar la página para ver si hay elementos visibles
+  handleScroll();
+  
