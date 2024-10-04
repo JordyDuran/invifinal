@@ -324,7 +324,7 @@ p {
 @media (max-width: 500px) {
     .bloque-regalos{
         font-size: 18px; /* Reducir el tamaño de la fuente para móviles *****************************************/
-        top: 49.5%;
+        top: 48.58%;
     }
 }
 
@@ -413,7 +413,7 @@ p {
 @media (max-width: 500px) {
     .texto-solo-adultos{
         font-size: 18px; /* Reducir el tamaño de la fuente para móviles *****************************************/
-        top: 59.4%;
+        top: 58.8%;
     }
 }
 
@@ -442,10 +442,11 @@ p {
 }
 
 @media (max-width: 500px) {
-    .imagen-itinerario{
+    .imagen-itinerario img{
         
         font-size: 19px; /* Reducir el tamaño de la fuente para móviles ********************************************/
-        top: 67%;
+        top: 66%;
+        width: 150px;
     }
 }
 
@@ -465,8 +466,16 @@ p {
 
 @media (max-width: 500px) {
     .itinerario {
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 69.85%;
+        position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    margin-top: -40px; /* Reducido para menos espacio en la parte superior */
+    padding: -15px; /* Reducido para acercar más los elementos */
+    box-sizing: border-box;
+    z-index: 2;
     }
 }
 
@@ -558,8 +567,8 @@ p {
 
 @media (max-width: 500px) {
     .confirmacion-asistencia {
-        font-size: 18px; /* Ajuste de tamaño de texto para móviles */
-        top: 93%; /* Ajusta la posición para pantallas pequeñas */
+        font-size: 16px; /* Ajuste de tamaño de texto para móviles */
+        top: 94%; /* Ajusta la posición para pantallas pequeñas */
     }
 }
 
@@ -591,6 +600,7 @@ p {
 @media (max-width: 500px) {
     .btn-confirm {
         height: 50px;
+        top: 96.5%;
         font-size: 18px;
     }
 }
