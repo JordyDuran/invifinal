@@ -124,8 +124,8 @@ p {
 
 @media (max-width: 500px) {
     .padres{
-        font-size: 17px; /* Reducir el tamaño de la fuente para móviles **************************************************/
-        top: 17%;
+        font-size: 20px; /* Reducir el tamaño de la fuente para móviles **************************************************/
+        top: 15%;
     }
 }
 
@@ -148,8 +148,8 @@ p {
 
 @media (max-width: 500px) {
     .fecha{
-        font-size: 18px; /* Reducir el tamaño de la fuente para móviles *********************************************************/
-        top: 26%;
+        font-size: 20.5px; /* Reducir el tamaño de la fuente para móviles *********************************************************/
+        top: 21%;
     }
 }
 
@@ -196,8 +196,8 @@ p {
 /* Ajustes específicos para móviles */
 @media (max-width: 500px) {
     .ubicacion{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles *************************************************/
-        top: 39%;
+        font-size: 20px; /* Reducir el tamaño de la fuente para móviles *************************************************/
+        top: 33.5%;
     }
 }
 
@@ -225,8 +225,8 @@ p {
 
 @media (max-width: 500px) {
     .bloque-dresscode{
-        font-size: 19px; /* Reducir el tamaño de la fuente para móviles *****************************************/
-        top: 50.5%;
+        font-size: 20px; /* Reducir el tamaño de la fuente para móviles *****************************************/
+        top: 42.8%;
     }
 }
 
@@ -324,7 +324,7 @@ p {
 @media (max-width: 500px) {
     .bloque-regalos{
         font-size: 18px; /* Reducir el tamaño de la fuente para móviles *****************************************/
-        top: 57%;
+        top: 49.5%;
     }
 }
 
@@ -413,7 +413,7 @@ p {
 @media (max-width: 500px) {
     .texto-solo-adultos{
         font-size: 18px; /* Reducir el tamaño de la fuente para móviles *****************************************/
-        top: 70%;
+        top: 59.4%;
     }
 }
 
@@ -445,7 +445,7 @@ p {
     .imagen-itinerario{
         
         font-size: 19px; /* Reducir el tamaño de la fuente para móviles ********************************************/
-        top: 79%;
+        top: 67%;
     }
 }
 
@@ -466,7 +466,7 @@ p {
 @media (max-width: 500px) {
     .itinerario {
         font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
-        top: 82.5%;
+        top: 69.85%;
     }
 }
 
@@ -559,7 +559,7 @@ p {
 @media (max-width: 500px) {
     .confirmacion-asistencia {
         font-size: 18px; /* Ajuste de tamaño de texto para móviles */
-        top: 90%; /* Ajusta la posición para pantallas pequeñas */
+        top: 93%; /* Ajusta la posición para pantallas pequeñas */
     }
 }
 
@@ -567,3 +567,60 @@ p {
     font-size: 22px;
 }
 
+
+.btn-confirm {
+    font-family: "Cormorant Garamond", serif;
+    background: linear-gradient(45deg, #5e9a63a3, #205d25a3);
+    color: #e0e0e0;
+    border: none;
+    position: absolute; /* Cambiado a 'absolute' */
+    top: 95%; /* Ajusta esta propiedad para moverlo verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar completamente */
+    height: 60px;
+    font-size: 20px;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Asegura que esté encima de la imagen de fondo */
+}
+
+@media (max-width: 500px) {
+    .btn-confirm {
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+.btn-confirm:hover {
+    background: #5c8065;
+    color: #ffffffa3;
+}
+
+.btn-confirm:before,
+.btn-confirm:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #134819;
+    transition: 400ms ease all;
+}
+
+.btn-confirm:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-confirm:hover:before,
+.btn-confirm:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
