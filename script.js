@@ -104,3 +104,30 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(image); // Observa la imagen
   });
   
+
+  // Función para detectar si un elemento es visible al hacer scroll
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Aplicar la animación cuando los elementos sean visibles
+function handleScroll() {
+    const items = document.querySelectorAll('.evento');
+    items.forEach(item => {
+        if (isElementInViewport(item)) {
+            item.classList.add('visible');
+        }
+    });
+}
+
+// Detectar el scroll
+window.addEventListener('scroll', handleScroll);
+
+// Llamar a la función para la primera carga de la página
+handleScroll();

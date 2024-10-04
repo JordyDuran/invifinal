@@ -112,7 +112,7 @@ p {
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 16.5%; 
+    top: 15.5%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -137,7 +137,7 @@ p {
 .fecha {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 26%; /* Ajusta la posición del bloque de fecha según lo necesites */
+    top: 22.4%; /* Ajusta la posición del bloque de fecha según lo necesites */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -184,7 +184,7 @@ p {
 .ubicacion {
     font-family: "Cormorant Garamond", serif;
     position: absolute;
-    top: 38.5%; /* Ajusta según la disposición en tu diseño */
+    top: 33%; /* Ajusta según la disposición en tu diseño */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -215,7 +215,7 @@ p {
 .bloque-dresscode {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Permite que el bloque se posicione sobre otros elementos */
-    top: 50.4%; /* Ajusta la posición vertical */
+    top: 42.5%; /* Ajusta la posición vertical */
     left: 50%; /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra el bloque en la mitad */
     padding: 20px; /* Espacio alrededor del bloque */
@@ -313,10 +313,11 @@ p {
 .bloque-regalos {
     font-family: "Cormorant Garamond", serif;
     position: absolute; /* Se coloca de manera absoluta dentro de su contenedor */
-    top: 58%; /* Ajusta la distancia desde la parte superior de la página */
+    top: 49.2%; /* Ajusta la distancia desde la parte superior de la página */
     left: 50%;
     transform: translate(-50%, 0); /* Mantiene el bloque centrado horizontalmente */
     padding: 20px;
+    width: 80%;
     background-color: transparent;
     z-index: 2; /* Por encima de la imagen */
 }
@@ -329,12 +330,12 @@ p {
 
 .texto-regalos h2 {
     color: #558159; 
-    font-size: 24px;
+    font-size: 27px;
     margin-top: 10px;
 }
 
 .texto-regalos p {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 10px;
 }
 
@@ -394,14 +395,15 @@ p {
 
 .texto-solo-adultos {
     position: absolute;
-    top: 70.5%;
+    top: 58.7%;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 600px; /* Aumenta el ancho máximo */
+    width: 90%;
+    max-width: 800px; /* Aumenta el ancho máximo */
     padding: 20px 30px; /* Aumenta el padding lateral */
     background-color: transparent; /* Sin color de fondo */
     font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
+    font-size: 20.5px;
     text-align: center;
     color: #000; /* Color del texto */
     border-radius: 8px;
@@ -416,7 +418,8 @@ p {
 }
 
 .texto-solo-adultos strong {
-    font-size: 20px;
+    max-width: 800px;
+    font-size: 21px;
     color: #447451; /* Color rojo para destacar la parte importante */
 }
 
@@ -425,7 +428,7 @@ p {
 
 .imagen-itinerario {
     position: absolute; /* Para colocarla sobre la imagen de fondo */
-    top: 78.28%; /* Ajusta esta posición según sea necesario */
+    top: 65.6%; /* Ajusta esta posición según sea necesario */
     left: 50%;
     transform: translateX(-50%);
     max-width: 80%; /* Ajusta el ancho máximo de la imagen */
@@ -449,19 +452,19 @@ p {
 
 .itinerario {
     position: absolute;
-    top: 81%;
+    top: 69.38%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 800px;
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 30px; /* Reducido para menos espacio en la parte superior */
+    padding: 15px; /* Reducido para acercar más los elementos */
     box-sizing: border-box;
     z-index: 2;
 }
 
 @media (max-width: 500px) {
-    .itinerario{
+    .itinerario {
         font-size: 19px; /* Reducir el tamaño de la fuente para móviles */
         top: 82.5%;
     }
@@ -475,14 +478,14 @@ p {
     left: 50%;
     transform: translateX(-50%);
     width: 3px;
-    background-color: rgb(74, 128, 81); /* Línea negra en el centro */
+    background-color: rgb(74, 128, 81); /* Línea en el centro */
     z-index: 1;
 }
 
 .evento {
     position: relative;
     width: 50%;
-    padding: 20px;
+    padding: 10px; /* Reducido para menos espacio entre elementos */
     box-sizing: border-box;
     text-align: center; /* Centra la imagen, hora y texto */
 }
@@ -503,15 +506,15 @@ p {
 
 .evento .hora {
     font-size: 20px;
-    color:#134819;
+    color: #134819;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 7px; /* Reducido para menos espacio entre la hora y la imagen */
 }
 
 .evento .descripcion {
     font-size: 23px;
     color: #000000;
-    margin-top: 5px;
+    margin-top: 3px; /* Reducido para menos espacio entre la descripción y la hora */
     font-family: "Cormorant Garamond", serif;
 }
 
@@ -522,7 +525,7 @@ p {
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background-color: rgb(42, 115, 60); /* Círculo negro */
+    background-color: rgb(42, 115, 60); /* Círculo */
     border-radius: 50%;
     z-index: 2;
 }
@@ -534,3 +537,33 @@ p {
 .evento.derecha::before {
     left: 12px;
 }
+
+
+
+.confirmacion-asistencia {
+    position: absolute;
+    top: 92%; /* Ajusta este valor según necesites */
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    max-width: 600px; /* Ajusta el ancho del bloque */
+    padding: 20px 30px; /* Espaciado interno */
+    background-color: transparent; /* Sin fondo */
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    text-align: center;
+    color: #000; /* Color del texto */
+    z-index: 2; /* Asegura que esté sobre la imagen de fondo */
+}
+
+@media (max-width: 500px) {
+    .confirmacion-asistencia {
+        font-size: 18px; /* Ajuste de tamaño de texto para móviles */
+        top: 90%; /* Ajusta la posición para pantallas pequeñas */
+    }
+}
+
+.letra-conf{
+    font-size: 22px;
+}
+
