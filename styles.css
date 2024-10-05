@@ -499,17 +499,17 @@ p {
 @media (max-width: 500px) {
     .itinerario {
         position: absolute;
-    top: 69%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 800px;
-    margin-top: -40px; /* Reducido para menos espacio en la parte superior */
-    padding: -15px; /* Reducido para acercar más los elementos */
+    margin-top: -20px; /* Reducido para menos espacio en la parte superior */
+    padding: -70px; /* Reducido para acercar más los elementos */
     box-sizing: border-box;
     z-index: 2;
     }
-}
+} 
 
 .itinerario::before {
     content: '';
@@ -526,10 +526,10 @@ p {
 .evento {
     position: relative;
     width: 50%;
-    padding: 10px; /* Reducido para menos espacio entre elementos */
+    padding: -10px; /* Reducido para menos espacio entre elementos */
     box-sizing: border-box;
     text-align: center; /* Centra la imagen, hora y texto */
-}
+} 
 
 .evento.izquierda {
     left: 0;
@@ -540,9 +540,9 @@ p {
 }
 
 .evento img {
-    width: 80px; /* Ajusta el tamaño de las imágenes */
+    width: 75px; /* Ajusta el tamaño de las imágenes */
     padding: 8px;
-    height: 82px;
+    height: 75px;
 }
 
 .evento .hora {
@@ -635,7 +635,7 @@ p {
         top: 96.5%;
         font-size: 18px;
     }
-}
+} 
 
 .btn-confirm:hover {
     background: #5c8065;
@@ -666,3 +666,6 @@ p {
     width: 100%;
     transition: 800ms ease all;
 }
+
+
+
